@@ -1,0 +1,305 @@
+<!DOCTYPE html>  
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio | Lucas</title>
+
+  <link rel="stylesheet" href="Estilos/estilos.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-M96eU8fENp7qq0EDwh+hdq5IuVXY3yNH7IrWQk8RNBFA3RC7S7yVZChV0F2Z1VksGjC3/5R0u1v5c9eQZ+Wb1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div> 
+      <ul id="menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#qualificacoes">Formação</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+
+  <main>
+
+<section id="home">
+  <div class="texto-home">
+    <h1>Olá, eu sou o Lucas</h1>
+    <p>Desenvolvedor focado em soluções eficientes e criativas.</p>
+    <p>
+      Abaixo, você encontrará uma seleção dos meus projetos pessoais, desenvolvidos com cuidado, criatividade e dedicação. Espero que aprecie o resultado e perceba o valor e o empenho investidos em cada um deles.
+    </p>
+<button onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})" class="botao-azul">
+  Fale Comigo
+</button>
+
+
+  </div>
+
+  <img src="imagens/R.png"Foto de Lucas" class="foto" />
+</section>
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+     <div class="social-lateral">
+  <a href="https://www.instagram.com/lucasstsc/" target="_blank" class="mini-social-button">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://github.com/LucasSCarmo0305" target="_blank" class="mini-social-button">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <a href="https://wa.me/5579999255375" target="_blank" class="mini-social-button">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+    </section>
+
+    <section id="sobre" class="text-center">
+      <h2>Sobre Mim</h2>
+      <p>
+       Tenho 18 anos e sou apaixonado por tecnologia e inovação. Atualmente, sou estudante no SENAI, onde me especializo em desenvolvimento web e no uso de tecnologias modernas. Sempre fui uma pessoa criativa, curiosa e determinada, com grande interesse em transformar ideias em soluções digitais.
+
+Meu entusiasmo pela área vai além da sala de aula. Gosto de explorar, aprender novas linguagens, ferramentas e acompanhar as tendências do mercado. Estou constantemente em busca de desafios que me permitam aprimorar minhas habilidades, desenvolver projetos e evoluir tanto profissional quanto pessoalmente. Acredito que a tecnologia tem o poder de mudar o mundo, e quero fazer parte dessa transformação, contribuindo com soluções eficientes, criativas e inovadoras.
+      </p>
+      <img src="imagens/Imagem do WhatsApp de 2025-05-31 à(s) 19.56.33_681d118e.jpg" alt="Foto de Lucas" class="foto-perfil" />
+    </section>
+
+    <section id="habilidades">
+      
+      <h2>Habilidades Técnicas</h2>
+      <p>Aprendi a usar HTML para criar a estrutura de sites, com organização de textos, links, formulários e imagens. Com JavaScript, consegui adicionar interatividade às páginas, como validação de formulários, resposta a eventos e pequenas aplicações. Já com Python, desenvolvi a lógica de programação, criei scripts automatizados, usei arquivos e comecei a explorar bibliotecas como tkinter e requests.</p>
+      <p class="subtitulo">Áreas em que me destaco:</p>
+      
+
+      <div class="categoria">
+        <div class="titulo-categoria" onclick="toggleCategoria(this)">
+          <span>📊 Analista de Informações</span>
+          <span class="seta">▼</span>
+        </div>
+
+        <div class="conteudo-categoria" style="display: none;">
+          <div class="habilidade">
+            <span>SQL</span>
+            <div class="barra">
+              <div class="preenchido" data-width="90%"></div>
+            </div>
+            <span class="percentual">90%</span>
+          </div>
+
+          <div class="habilidade">
+            <span>Modelagem de Sistemas</span>
+            <div class="barra">
+              <div class="preenchido" data-width="85%"></div>
+            </div>
+            <span class="percentual">85%</span>
+          </div>
+          <div class="habilidade">
+            <span>PYTHON</span>
+            <div class="barra">
+              <div class="preenchido" data-width="85%"></div>
+            </div>
+            <span class="percentual">80%</span>
+          </div>
+          <div class="habilidade">
+            <span>HTML</span>
+            <div class="barra">
+              <div class="preenchido" data-width="95%"></div>
+            </div>
+            <span class="percentual">95%</span>
+          </div>
+          <div class="habilidade">
+            <span>css</span>
+            <div class="barra">
+              <div class="preenchido" data-width="80%"></div>
+            </div>
+            <span class="percentual">80%</span>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+    <section id="qualificacoes">
+      <h2>Formação Acadêmica</h2>
+      <p class="subtitulo">Minha jornada até aqui:</p>
+
+      <div class="linha-do-tempo">
+        <div class="linha-central"></div>
+
+        <div class="qualificacao direita">
+          <h3>Técnico em Desenvolvimento de Sistemas</h3>
+          <p>Senai - CETAFAJU</p>
+          <span class="ano">📅 2024 - 2025</span>
+          <div class="ponto"></div>
+        </div>
+
+        <div class="qualificacao direita">
+          <h3>Curso Logica de Programação</h3>
+          <p>Senac AJU</p>
+          <span class="ano">📅 2023</span>
+          <div class="ponto"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="text-center">
+      <h2>Serviços Oferecidos</h2>
+      <div class="servicos-container">
+        <div class="servico">
+          <h4>🔍 Análise de Dados</h4>
+          <p>Transformação de dados brutos em insights estratégicos.</p>
+        </div>
+        <div class="servico">
+          <h4>💻 Desenvolvimento Web</h4>
+          <p>Criação de sites modernos, responsivos e otimizados.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Meus Projetos</h2>
+      <p>Confira alguns trabalhos e soluções que desenvolvi com dedicação e criatividade.</p>
+
+      <div class="projects-container" style="overflow: hidden; position: relative;">
+        <div class="projects-wrapper" style="display: flex; transition: transform 0.4s ease;">
+          <div class="project-card">
+            <h3>Calculadora</h3>
+            <p>Uma landing page moderna feita com HTML e CSS.</p>
+            <img src="imagens/Captura de tela 2025-06-02 135456.png" alt="Foto de Lucas" class="foto-perfil" />
+            <a href="https://lucasscarmo0305.github.io/sitecalculadora/" target="_blank" rel="noopener">Ver Projeto</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Controle de pedagio</h3>
+            <p>Controle de um pedagio com pagamentos</p>
+            <img src="imagens/Captura de tela 2025-06-02 142656.png" alt="Foto de Lucas" class="foto-perfil" />
+            <a href="https://lucasscarmo0305.github.io/sitecontrolepedagio/" target="_blank" rel="noopener">Ver Projeto</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Site sobre android</h3>
+            <p>Curiosidades Desafio android</p>
+            <img src="imagens/Captura de tela 2025-06-02 142826.png" alt="Foto de Lucas" class="foto-perfil" />
+            <a href="https://lucasscarmo0305.github.io/sitedesfioandroid/" target="_blank" rel="noopener">Ver Projeto</a>
+          </div>
+
+           <div class="project-card">
+            <h3>Site Ficha de inscrição</h3>
+            <p>Formulario de inscrição</p>
+            <img src="imagens/Captura de tela 2025-06-02 162939.png" alt="Foto de Lucas" class="foto-perfil" />
+            <a href="https://lucasscarmo0305.github.io/siteFichadeinscri-o/" target="_blank" rel="noopener">Ver Projeto</a>
+          </div>
+        </div>
+
+        <button id="prevBtn" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index: 10;">&#10094;</button>
+        <button id="nextBtn" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); z-index: 10;">&#10095;</button>
+      </div>
+    </section>
+
+<section id="contato">
+  <h2>Entre em Contato</h2>
+
+  <div class="social-buttons">
+    <a href="https://www.instagram.com/lucasstsc/" target="_blank" class="mini-social-button">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://github.com/LucasSCarmo0305" target="_blank" class="mini-social-button">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://wa.me/5579999255375" target="_blank" class="mini-social-button">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <form id="form-contato">
+    <input type="text" name="sendername" placeholder="Seu nome" required />
+    <input type="email" name="senderemail" placeholder="Seu e-mail" required />
+    <textarea name="message" placeholder="Sua mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+
+      <div id="confirmacao" class="confirmacao" style="display: none;"></div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("zOQfplrrHkLLXsf1B");
+
+    document.getElementById("form-contato").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_d76rinf", "template_txbbm9v", this)
+        .then(function() {
+          alert("✅ E-mail enviado com sucesso!");
+          document.getElementById("form-contato").reset();
+          const confirmDiv = document.getElementById("confirmacao");
+          confirmDiv.style.display = "block";
+          confirmDiv.textContent = "Mensagem enviada com sucesso!";
+          setTimeout(() => {
+            confirmDiv.style.display = "none";
+          }, 5000);
+        }, function(error) {
+          console.error("Erro ao enviar:", error);
+          alert("❌ Erro ao enviar e-mail.");
+        });
+    });
+  </script>
+
+  <script src="func.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <footer style="background-color: #222; color: #eee; padding: 20px 0; text-align: center; font-family: 'Poppins', sans-serif;">
+  <div style="max-width: 600px; margin: 0 auto;">
+    <h3 style="margin-bottom: 10px;">Lucas Santos</h3>
+    <p style="margin: 0 0 20px;">Estudante de Programação</p>
+    <nav style="margin-bottom: 20px;">
+      <a href="#servico" style="color: #eee; margin: 0 10px; text-decoration: none;">Serviço</a> |
+      <a href="#portfolio" style="color: #eee; margin: 0 10px; text-decoration: none;">Portfolio</a> |
+      <a href="#contato" style="color: #eee; margin: 0 10px; text-decoration: none;">Contato</a>
+    </nav>
+    <small>© 2025 Lucas Santos.</small>
+  </div>
+</footer>
+
+</body>
+</html>

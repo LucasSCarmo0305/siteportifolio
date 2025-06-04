@@ -1,0 +1,265 @@
+<!DOCTYPE html>  
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio | Lucas</title>
+
+ 
+  <link rel="stylesheet" href="Estilos/estilos.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-M96eU8fENp7qq0EDwh+hdq5IuVXY3yNH7IrWQk8RNBFA3RC7S7yVZChV0F2Z1VksGjC3/5R0u1v5c9eQZ+Wb1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+
+  <header>
+  
+    
+
+      </div>
+    </div>
+
+
+    <nav>
+      <ul>
+        
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#qualificacoes">Formação</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+         <button class="theme-toggle" aria-label="Alternar tema">
+  <i class="fas fa-moon"></i>
+</button>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+<section id="home" class="home-section">
+  <div class="home-container">
+    <div class="home-text">
+      <h1>Olá, eu sou o <span>Lucas</span></h1>
+      <p>Desenvolvedor focado em soluções eficientes e criativas.</p>
+      <p class="descricao">
+        Abaixo, você encontrará uma seleção dos meus projetos pessoais, desenvolvidos com cuidado, criatividade e dedicação.
+        Espero que aprecie o resultado e perceba o valor e o empenho investidos em cada um deles.
+      </p>
+      <button onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})" class="botao-contato">
+        Fale Comigo
+      </button>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/lucasstsc/" target="_blank" class="mini-social-button">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/LucasSCarmo0305" target="_blank" class="mini-social-button">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://wa.me/5579999255375" target="_blank" class="mini-social-button">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="home-image">
+      <img src="imagens/R.jpeg" alt="Foto de Lucas" class="foto" />
+    </div>
+  </div>
+</section>
+
+
+      
+ 
+     
+    
+    <section id="sobre" class="text-center">
+      <h2>Sobre Mim</h2>
+      <p>
+        Tenho 18 anos, atualmente estudante no SENAI, me especializo em desenvolvimento web e tecnologias modernas. Estou sempre em busca de novos aprendizados e desafios que expandam minhas habilidades.
+      </p>
+      <img src="imagens/Imagem do WhatsApp de 2025-05-31 à(s) 19.56.33_681d118e.jpg" alt="Foto de Lucas" class="foto-perfil" />
+    </section>
+
+ 
+    <section id="habilidades">
+      <h2>Habilidades Técnicas</h2>
+      <p class="subtitulo">Áreas em que me destaco:</p>
+
+      <div class="categoria" onclick="toggleCategoria(this.querySelector('.titulo-categoria'))">
+        <div class="titulo-categoria">
+          <span>📊 Analista de Informações</span>
+          <span class="seta">▼</span>
+        </div>
+
+        <div class="conteudo-categoria">
+          <div class="habilidade">
+            <span>SQL</span>
+            <div class="barra">
+              <div class="preenchido" style="width:90%;"></div>
+            </div>
+            <span class="percentual">90%</span>
+          </div>
+
+          <div class="habilidade">
+            <span>Modelagem de Sistemas</span>
+            <div class="barra">
+              <div class="preenchido" style="width:85%;"></div>
+            </div>
+            <span class="percentual">85%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="qualificacoes">
+      <h2>Formação Acadêmica</h2>
+      <p class="subtitulo">Minha jornada até aqui:</p>
+
+      <div class="linha-do-tempo">
+        <div class="linha-central"></div>
+
+        <div class="qualificacao direita">
+          <h3>Técnico em Desenvolvimento de Sistemas</h3>
+          <p>Senai - CETAFAJU</p>
+          <span class="ano">📅 2024 - 2025</span>
+          <div class="ponto"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="servicos" class="text-center">
+      <h2>Serviços Oferecidos</h2>
+      <div class="servicos-container">
+        <div class="servico">
+          <h4>🔍 Análise de Dados</h4>
+          <p>Transformação de dados brutos em insights estratégicos.</p>
+        </div>
+        <div class="servico">
+          <h4>💻 Desenvolvimento Web</h4>
+          <p>Criação de sites modernos, responsivos e otimizados.</p>
+        </div>
+      </div>
+    </section>
+
+
+   <section id="portfolio">
+  <h2>Meus Projetos</h2>
+  <p>Confira alguns trabalhos e soluções que desenvolvi com dedicação e criatividade.</p>
+
+  <div class="projects-container" style="overflow: hidden; position: relative;">
+    <div class="projects-wrapper" style="display: flex; transition: transform 0.4s ease;">
+      <div class="project-card">
+        <h3>Calculadora</h3>
+        <p>Uma landing page moderna feita com HTML e CSS.</p>
+        <a href="https://lucasscarmo0305.github.io/sitecalculadora/" target="_blank" rel="noopener">Ver Projeto</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Controle de pedagio</h3>
+        <p>Controle de um pedagio com pagamentos</p>
+        <a href="https://lucasscarmo0305.github.io/sitecontrolepedagio/" target="_blank" rel="noopener">Ver Projeto</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Site sobre android</h3>
+        <p>Curiosidades Desafio android</p>
+        <a href="https://lucasscarmo0305.github.io/sitedesfioandroid/" target="_blank" rel="noopener">Ver Projeto</a>
+      </div>
+    </div>
+
+    <button id="prevBtn" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index: 10;">&#10094;</button>
+    <button id="nextBtn" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); z-index: 10;">&#10095;</button>
+  </div>
+</section>
+
+
+
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+ <a href="https://www.instagram.com/lucasstsc/" target="_blank" class="social-button instagram-button">
+  <i class="fab fa-instagram"></i> Meu Instagram
+</a>
+
+<a href="https://github.com/LucasSCarmo0305" target="_blank" class="social-button github-button">
+  <i class="fab fa-github"></i> Meu GitHub
+</a>
+
+<a href="https://wa.me/5579999255375" target="_blank" class="social-button whatsapp-button">
+  <i class="fab fa-whatsapp"></i> Meu WhatsApp
+</a>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+
+    <form id="form-contato">
+  <input type="text" name="nome" placeholder="Seu nome" required />
+  <input type="email" name="email" placeholder="Seu e-mail" required />
+  <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+<div id="confirmacao" class="confirmacao" style="display: none;"></div>
+
+  </main>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <script type="module">
+  import emailjs from 'https://cdn.emailjs.com/dist/email.esm.min.js';
+
+  emailjs.init('zOQfplrrHkLLXsf1B');
+
+  window.emailjs = emailjs; 
+</script>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+ 
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="func.js"></script>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>Lucas Santos</h3>
+      <p>Estudante de Programação</p>
+    </div>
+    <div class="footer-right">
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-copy">© 2025 Lucas Santos.</p>
+</footer>
+
+
+</body>
+</html>
